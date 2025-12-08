@@ -1,0 +1,7 @@
+{
+	"admin": {
+		"algo": "sha256",
+		"salt": "9cacb7dff21d93f967abf81c4381bea9",
+		"hash": "089a094a2f4d72030da3bd8f3a391f1dc80e78c0ff24693a3455ec7ca7f154b3"
+	}
+}

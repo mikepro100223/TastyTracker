@@ -1,0 +1,67 @@
+{
+	"recipes": [
+		{
+			"id": "1",
+			"title": "Spaghetti Carbonara",
+			"ingredients": "400g Spaghetti\n200g Speck\n4 Eier\n100g Parmesan\nSalz, Pfeffer",
+			"instructions": "Spaghetti kochen. Speck anbraten. Eier mit Parmesan verquirlen. Pasta mit Speck mischen, Ei-Mischung unterrühren. Sofort servieren.",
+			"difficulty": "mittel"
+		},
+		{
+			"id": "2",
+			"title": "Tomatensalat",
+			"ingredients": "4 Tomaten\n1 Zwiebel\nBasilikum\nOlivenöl\nBalsamico\nSalz, Pfeffer",
+			"instructions": "Tomaten in Scheiben schneiden. Zwiebel würfeln. Alles mischen, mit Öl und Essig anmachen. Mit Basilikum garnieren.",
+			"difficulty": "leicht"
+		},
+		{
+			"id": "3",
+			"title": "Rinderbraten",
+			"ingredients": "1kg Rindfleisch\n2 Zwiebeln\n3 Karotten\nRotwein\nLorbeer\nThymian\nSalz, Pfeffer",
+			"instructions": "Fleisch scharf anbraten. Gemüse dazugeben. Mit Rotwein ablöschen. Bei 160°C 3 Stunden schmoren. Sauce passieren.",
+			"difficulty": "schwer"
+		},
+		{
+			"id": "4",
+			"title": "Pfannkuchen",
+			"ingredients": "250g Mehl\n3 Eier\n500ml Milch\n1 Prise Salz\nButter zum Braten",
+			"instructions": "Mehl, Eier, Milch und Salz zu glattem Teig verrühren. In heißer Pfanne dünn ausbacken. Mit Zucker und Zimt servieren.",
+			"difficulty": "leicht"
+		},
+		{
+			"id": "5",
+			"title": "Gemüsecurry",
+			"ingredients": "1 Brokkoli\n2 Paprika\n1 Dose Kokosmilch\n2 EL Currypaste\n1 Zwiebel\nReis",
+			"instructions": "Zwiebel anschwitzen, Currypaste kurz mitbraten. Gemüse und Kokosmilch zugeben. 15 Min köcheln. Mit Reis servieren.",
+			"difficulty": "mittel"
+		},
+		{
+			"id": "6",
+			"title": "Tiramisu",
+			"ingredients": "500g Mascarpone\n4 Eier\n100g Zucker\n200g Löffelbiskuits\nEspresso\nKakao",
+			"instructions": "Eigelb mit Zucker schaumig schlagen, Mascarpone unterrühren. Eiweiß steif schlagen und unterheben. Biskuits in Espresso tauchen, schichten. Mit Kakao bestäuben. 4h kühlen.",
+			"difficulty": "mittel"
+		},
+		{
+			"id": "7",
+			"title": "Käsespätzle",
+			"ingredients": "400g Spätzlemehl\n4 Eier\nWasser\n300g Käse\n2 Zwiebeln\nButter",
+			"instructions": "Spätzleteig zubereiten und ins kochende Wasser schaben. Abschütten. Mit geriebenem Käse schichten. Zwiebeln rösten und darüber geben.",
+			"difficulty": "mittel"
+		},
+		{
+			"id": "8",
+			"title": "Guacamole",
+			"ingredients": "3 Avocados\n1 Tomate\n1 Limette\n1 Zwiebel\nKoriander\nSalz, Pfeffer",
+			"instructions": "Avocados zerdrücken. Tomate und Zwiebel fein würfeln. Limettensaft, Koriander zugeben. Alles vermengen und abschmecken.",
+			"difficulty": "leicht"
+		},
+		{
+			"id": "9",
+			"title": "Beef Wellington",
+			"ingredients": "800g Rinderfilet\n300g Champignons\n200g Pâté\nBlätterteig\n1 Ei\nSenf",
+			"instructions": "Filet anbraten, mit Senf bestreichen. Champignon-Duxelles und Pâté auftragen. In Blätterteig einwickeln. Mit Ei bestreichen. Bei 200°C 25 Min backen.",
+			"difficulty": "schwer"
+		}
+	]
+}
