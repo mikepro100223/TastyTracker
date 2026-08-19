@@ -3,27 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TastyTracker SPA</title>
+  <meta name="description" content="TastyTracker – deine persönliche Rezeptsammlung." />
+  <meta name="theme-color" content="#201a17" />
+  <title>TastyTracker · Rezepte, die bleiben</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>TastyTracker 🍲</h1>
-    <nav>
-      <a href="#/">Übersicht</a>
-      <a href="#/add">Neues Rezept</a>
-      <a href="#/login">Login</a>
-      <a href="#/register">Registrieren</a>
-      <a href="javascript:logout()">Logout</a>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="TastyTracker Startseite">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M5 11h14v2a7 7 0 0 1-7 7 7 7 0 0 1-7-7v-2Z" />
+          <path d="M8 8c0-1 1-1.5 1-2.5S8 4 8 3M12 8c0-1 1-1.5 1-2.5S12 4 12 3M16 8c0-1 1-1.5 1-2.5S16 4 16 3" />
+        </svg>
+      </span>
+      <span>Tasty<span>Tracker</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Navigation öffnen">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <a href="#/" data-route="#/">Übersicht</a>
+      <a href="#/add" data-route="#/add" data-auth-only>Neues Rezept</a>
+      <a href="#/login" data-route="#/login" data-guest-only>Login</a>
+      <a class="nav-cta" href="#/register" data-route="#/register" data-guest-only>Registrieren</a>
+      <button class="nav-logout" id="logoutButton" type="button" data-auth-only>Abmelden</button>
     </nav>
   </header>
 
-  <main id="app"></main>
+  <main id="app" tabindex="-1"></main>
 
-  <footer>
-    <p>&copy; 2025 TastyTracker – Deine Rezepte im Überblick</p>
+  <footer class="site-footer">
+    <div>
+      <a class="brand brand-footer" href="#/">Tasty<span>Tracker</span></a>
+      <p>Lieblingsrezepte sammeln. Genussmomente bewahren.</p>
+    </div>
+    <p>Portfolio-Projekt · Modul 294 · <span id="currentYear"></span></p>
   </footer>
 
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
   <script src="app.js"></script>
 </body>
 </html>
