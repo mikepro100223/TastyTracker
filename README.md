@@ -8,8 +8,11 @@ TastyTracker ist eine einfache Single-Page-Anwendung zum Verwalten von Rezepten.
 - Geschützte Rezeptübersicht mit JWT-Authentifizierung
 - Rezepte erstellen, bearbeiten und löschen
 - Schwierigkeitsgrad als `leicht`, `mittel` oder `schwer` festlegen
-- Responsive Benutzeroberfläche ohne Frontend-Framework
-- Automatisierter Browser-Test für Selenium IDE
+- Rezepte nach Titel, Zutaten oder Schwierigkeitsgrad durchsuchen
+- Dashboard mit Rezeptstatistiken und dynamischen Zuständen
+- Responsive Portfolio-Oberfläche für Desktop, Tablet und Smartphone
+- Zugängliche Navigation, Formulare und Tastatur-Fokuszustände
+- Ladeanzeigen, Fehlermeldungen und Toast-Benachrichtigungen
 
 ## Technologien
 
@@ -24,7 +27,6 @@ TastyTracker ist eine einfache Single-Page-Anwendung zum Verwalten von Rezepten.
 
 - [Node.js](https://nodejs.org/) inklusive npm
 - Ein lokaler Webserver, zum Beispiel die VS-Code-Erweiterung **Live Server**
-- Optional: [Selenium IDE](https://www.selenium.dev/selenium-ide/) zum Ausführen des Browser-Tests
 
 ## Installation
 
@@ -48,7 +50,7 @@ npm install
 
 2. `index.html` über einen lokalen Webserver bereitstellen. Mit VS Code kann die Datei beispielsweise über **Open with Live Server** geöffnet werden.
 
-3. Die Anwendung im Browser öffnen. Der Selenium-Test verwendet:
+3. Die Anwendung im Browser öffnen, zum Beispiel unter:
 
    ```text
    http://127.0.0.1:5500/#/
@@ -78,10 +80,6 @@ Die Rezept-Endpunkte benötigen ein JWT im HTTP-Header:
 Authorization: Bearer <TOKEN>
 ```
 
-## Tests
-
-Der Selenium-IDE-Test befindet sich in [`Selenium tests/TastyTracker.side`](Selenium%20tests/TastyTracker.side). Vor dem Test müssen Frontend und Backend laufen. Anschließend kann die `.side`-Datei in Selenium IDE geöffnet und der Testfall **Testfall T1-3** gestartet werden.
-
 ## Projektstruktur
 
 ```text
@@ -91,9 +89,7 @@ Der Selenium-IDE-Test befindet sich in [`Selenium tests/TastyTracker.side`](Sele
 ├── app.js                      # Routing, Authentifizierung und CRUD-Logik
 ├── db.json                     # Lokale Rezeptdaten
 ├── accounts.json               # Lokal gespeicherte Benutzerkonten
-├── package.json                # Projektdefinition und Startskript
-└── Selenium tests/
-    └── TastyTracker.side       # Selenium-IDE-Test
+└── package.json                # Projektdefinition und Startskript
 ```
 
 ## Hinweise zur Sicherheit
